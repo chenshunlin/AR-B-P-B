@@ -10,7 +10,7 @@ updateme(){
 	if [[ -e ~/version.txt ]];then
 		rm -f ~/version.txt
 	fi
-	wget -q https://raw.githubusercontent.com/Readour/AR-B-P-B/master/version.txt
+	wget -q https://raw.githubusercontent.com/shadowsocksR-100/AR-B-P-B/master/version.txt
 	version1=`cat ~/version.txt`
 	version2=`cat /usr/local/SSR-Bash-Python/version.txt`
 	if [[ "$version1" == "$version2" ]];then
@@ -21,7 +21,7 @@ updateme(){
 		echo "当前最新版本为$version1,输入y进行更新，其它按键退出"
 		read -n 1 yn
 		if [[ $yn == [Yy] ]];then
-			wget -q -N --no-check-certificate https://raw.githubusercontent.com/Readour/AR-B-P-B/master/install.sh && bash install.sh
+			wget -q -N --no-check-certificate https://raw.githubusercontent.com/shadowsocksR-100/AR-B-P-B/master/install.sh && bash install.sh
 			sleep 3s
 			clear
 			ssr || exit 0
@@ -63,7 +63,7 @@ if [[ $choice == 2 ]];then
 	echo "切换到开发版之后你将面临一些奇怪的问题"
 	sumdc
 	if [[ "$sv" == "$solve" ]];then
-		wget -q -N --no-check-certificate https://raw.githubusercontent.com/Readour/AR-B-P-B/master/install.sh && bash install.sh develop
+		wget -q -N --no-check-certificate https://raw.githubusercontent.com/shadowsocksR-100/AR-B-P-B/master/install.sh && bash install.sh develop
 		sleep 3s
 		clear
 		ssr || exit 0
@@ -79,7 +79,7 @@ if [[ $choice == 4 ]];then
 	echo "你在做什么？你真的这么狠心吗？"
 	sumdc
 	if [[ "$sv" == "$solve" ]];then
-		wget -q -N --no-check-certificate https://raw.githubusercontent.com/Readour/AR-B-P-B/master/install.sh && bash install.sh uninstall
+		wget -q -N --no-check-certificate https://raw.githubusercontent.com/shadowsocksR-100/AR-B-P-B/master/install.sh && bash install.sh uninstall
 		exit 0
 	else
 		echo "计算错误，正确结果为$solve"
