@@ -88,7 +88,7 @@ else
     echo "libsodium已安装!"
 fi
 cd /usr/local
-git clone https://github.com/Readour/shadowsocksr.git
+git clone https://github.com/shadowsocksR-100/shadowsocksr.git
 cd ./shadowsocksr
 git manyuser
 git pull
@@ -137,7 +137,7 @@ if [[ -d /usr/local/SSR-Bash-Python ]];then
     fi
 else
     cd /usr/local
-    git clone https://github.com/Readour/AR-B-P-B.git
+    git clone https://github.com/shadowsocksR-100/AR-B-P-B.git
     cd AR-B-P-B
     git checkout master
     if [[ $1 == "develop" ]];then
@@ -219,10 +219,10 @@ fi
 
 #Install SSR-Bash Background
 if [[ $1 == "develop" ]];then
-	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/readour/AR-B-P-B/develop/ssr
+	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/shadowsocksR-100/AR-B-P-B/develop/ssr
 	chmod +x /usr/local/bin/ssr
 else
-	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/readour/AR-B-P-B/master/ssr
+	wget -q -N --no-check-certificate -O /usr/local/bin/ssr https://raw.githubusercontent.com/shadowsocksR-100/AR-B-P-B/master/ssr
 	chmod +x /usr/local/bin/ssr
 fi
 
