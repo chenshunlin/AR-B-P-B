@@ -44,7 +44,7 @@
 ## 缺点 ##
 - 默认未设置开机启动
 
-## 安装或更新到最新开发版(支持新特性，不推荐小白使用) ##
+## 安装或更新到最新开发版(支持新特性，推荐使用!) ##
     wget -q -N --no-check-certificate https://raw.githubusercontent.com/Readour/shadowsocksR-100/master/install.sh && bash install.sh develop
 
 ## 安装&更新 ##
